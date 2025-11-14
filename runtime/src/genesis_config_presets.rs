@@ -32,7 +32,7 @@ fn testnet_genesis(
                 .iter()
                 .cloned()
                 .map(|k| (k, 1u128 << 60))
-                .collect::<Vec<_>>(),
+                .collect::<Vec<_>>()
         },
         parachain_info: ParachainInfoConfig { parachain_id: id },
         collator_selection: CollatorSelectionConfig {
@@ -41,7 +41,7 @@ fn testnet_genesis(
                 .cloned()
                 .map(|(acc, _)| acc)
                 .collect::<Vec<_>>(),
-            candidacy_bond: EXISTENTIAL_DEPOSIT * 16,
+            candidacy_bond: EXISTENTIAL_DEPOSIT * 16
         },
         session: SessionConfig {
             keys: invulnerables
@@ -58,7 +58,7 @@ fn testnet_genesis(
         polkadot_xcm: PolkadotXcmConfig {
             safe_xcm_version: Some(SAFE_XCM_VERSION)
         },
-        sudo: SudoConfig { key: Some(root) },
+        sudo: SudoConfig { key: Some(root) }
     })
 }
 

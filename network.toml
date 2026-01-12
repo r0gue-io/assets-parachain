@@ -10,7 +10,7 @@ name = "bob"
 validator = true
 
 [[parachains]]
-chain = "asset-parachain"
+chain = "base-parachain"
 id = 2000
 default_command = "polkadot-omni-node"
 chain_spec_command_is_local = true
